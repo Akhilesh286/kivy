@@ -1,0 +1,33 @@
+#: import utils kivy.utils
+<MyGridLayout>
+    name:color
+    color:color
+    GridLayout:
+        cols: 1
+        size: root.width,root.height
+        GridLayout:
+            cols:2
+            Label: 
+                text: "Name:"
+            TextInput: 
+                id : name
+                multiline:False
+            Label:
+                text: "colomdkdr:"
+            TextInput: 
+                id: color
+                multiline:False
+        
+        Button :
+            text: "submit"
+            font_size:32
+            on_press:root.press()
+            # this is rgb colour
+            #background_color:(0,23,255)
+            # and this is hex eg-:#00ccff
+            background_normal: ''
+            background_color:utils.get_color_from_hex('#00ff00')
+            #size_hint:(None,None) #(1,.3)
+            #height:20
+            #width:200
+         

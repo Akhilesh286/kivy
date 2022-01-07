@@ -1,0 +1,20 @@
+
+<MyLayout>
+    BoxLayout:
+        orientation:"vertical"
+        size:self.width,self.height
+        padding:20
+        spacing:20
+        Label:
+            id:txt
+            text:"Hello world"
+            font_size:32
+            #color:(0,0,0)
+        Button:
+            text:"hello"
+            font_size:32
+            size_hint:(0.15,0.12)
+            Image:
+                source:"image/downloadfile.jpg"
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

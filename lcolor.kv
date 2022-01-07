@@ -1,0 +1,35 @@
+<Button>
+    font_size:50
+    background_normal:''
+    background_color:(0,255,242)
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size:root.width,root.height
+        spacing:10
+        padding:10
+        Label:
+        
+            text:"Name"
+            background_color:(0,0,1,1)
+            canvas.before:
+                Color:
+                    rgba:self.background_color
+                Rectangle:
+                    size:self.size
+                    pos:self.pos
+            # text property
+            color:(0,1,0,1)
+            bold: True
+            italic:True
+            outline_color:(0,0,0) 
+            outline_width:10
+            
+            
+            
+        TextInput:
+            multiline: False
+   
+        Button:
+            text: "I am"
+            background_color:(0,0,1,1)

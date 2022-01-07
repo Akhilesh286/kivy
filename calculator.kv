@@ -1,0 +1,97 @@
+<Button>
+    size_hint:(.1,.1)
+    font_size:32
+    
+<MyLayout>
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        TextInput:
+            id:inp 
+            text:"0"
+            halign:"right"
+            font_size:66
+            size_hint:(1,.15)
+
+        GridLayout:
+            cols:4
+            rows:5 
+            Button:
+                text:"%"
+                on_press:root.maths_sing("%")
+            Button:
+                text:u"\u00AB" 
+                on_press:root.remove()
+            Button:
+                text:"C"  
+                id: clear
+                on_press:root.clear()
+            Button:
+                text:"/"
+                on_press: root.maths_sing('/')
+            Button:
+                text:"7"
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(7)
+            Button:
+                text:"8"   
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(8)
+            Button:
+                text:"9" 
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(9)
+            Button:
+                text:"X"
+                on_press: root.maths_sing('*')
+            Button:
+                text:"4"
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(4)
+            Button:
+                text:"5"  
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(5)
+            Button:
+                text:"6"  
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(6)
+            Button:
+                text:"-"
+                on_press: root.maths_sing('-')
+            Button:
+                text:"1"
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(1)
+            Button:
+                text:"2"   
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(2)
+            Button:
+                text:"3"   
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(3)
+            Button:
+                text:"+"
+                on_press: root.maths_sing('+')
+            Button:
+                text:"+/-"
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.pos_neg()
+            Button:
+                text:"0"   
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.but_press(0)
+            Button:
+                text:"."    
+                background_color:(157/255,157/255,157/255,1)
+                on_press:root.dot()
+            Button:
+                text:"="
+                on_press:root.equals()
+            
+         
+        
+
+            
+        

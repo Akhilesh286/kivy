@@ -1,0 +1,72 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/kivy/.kivy/logs/kivy_22-01-06_46.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  9 2021, 08:02:40) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/bin/python3"
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2 (img_pil, img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.1 v1.r12p1-01alp0.62f282720426ab7712f1c6b996a6dc82'>
+[INFO   ] GL: OpenGL vendor <b'ARM'>
+[INFO   ] GL: OpenGL renderer <b'Mali-T720'>
+[INFO   ] GL: OpenGL parsed version: 3, 1
+[INFO   ] GL: Texture max size <8192>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 705, in _apply_rule
+[WARNING] stderr:     setattr(widget_set, key, value)
+[WARNING] stderr:   File "kivy/weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+[WARNING] stderr:   File "kivy/properties.pyx", line 498, in kivy.properties.Property.__set__
+[WARNING] stderr:   File "kivy/properties.pyx", line 542, in kivy.properties.Property.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 533, in kivy.properties.Property.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 1253, in kivy.properties.OptionProperty.check
+[WARNING] stderr: ValueError: MyLayout.tab_pos is set to an invalid option 'center'. Must be one of: ['left_top', 'left_mid', 'left_bottom', 'top_left', 'top_mid', 'top_right', 'right_top', 'right_mid', 'right_bottom', 'bottom_left', 'bottom_mid', 'bottom_right']
+[WARNING] stderr: 
+[WARNING] stderr: During handling of the above exception, another exception occurred:
+[WARNING] stderr: 
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/kivy/tab.py", line 20, in <module>
+[WARNING] stderr:     KvApp().run()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/app.py", line 949, in run
+[WARNING] stderr:     self._run_prepare()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/app.py", line 919, in _run_prepare
+[WARNING] stderr:     root = self.build()
+[WARNING] stderr:   File "/storage/emulated/0/kivy/tab.py", line 16, in build
+[WARNING] stderr:     return MyLayout()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/tabbedpanel.py", line 487, in __init__
+[WARNING] stderr:     super(TabbedPanel, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/gridlayout.py", line 279, in __init__
+[WARNING] stderr:     super(GridLayout, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/layout.py", line 76, in __init__
+[WARNING] stderr:     super(Layout, self).__init__(**kwargs)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/widget.py", line 359, in __init__
+[WARNING] stderr:     self.apply_class_lang_rules(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/uix/widget.py", line 463, in apply_class_lang_rules
+[WARNING] stderr:     Builder.apply(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 541, in apply
+[WARNING] stderr:     self._apply_rule(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 710, in _apply_rule
+[WARNING] stderr:     raise BuilderException(rule.ctx, rule.line,
+[WARNING] stderr: kivy.lang.builder.BuilderException: Parser: File "/storage/emulated/0/kivy/tab.kv", line 4:
+[WARNING] stderr: ...
+[WARNING] stderr:       2:<MyLayout>
+[WARNING] stderr:       3:    do_default_tab:False
+[WARNING] stderr: >>    4:    tab_pos:"center"
+[WARNING] stderr:       5:    TabbedPanelItem:
+[WARNING] stderr:       6:        text:"tab 1"
+[WARNING] stderr: ...
+[WARNING] stderr: ValueError: MyLayout.tab_pos is set to an invalid option 'center'. Must be one of: ['left_top', 'left_mid', 'left_bottom', 'top_left', 'top_mid', 'top_right', 'right_top', 'right_mid', 'right_bottom', 'bottom_left', 'bottom_mid', 'bottom_right']
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/arm-linux-androideabi/lib/python3.9/site-packages/kivy/lang/builder.py", line 705, in _apply_rule
+[WARNING] stderr:     setattr(widget_set, key, value)
+[WARNING] stderr:   File "kivy/weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+[WARNING] stderr:   File "kivy/properties.pyx", line 498, in kivy.properties.Property.__set__
+[WARNING] stderr:   File "kivy/properties.pyx", line 542, in kivy.properties.Property.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 533, in kivy.properties.Property.set
+[WARNING] stderr:   File "kivy/properties.pyx", line 1253, in kivy.properties.OptionProperty.check
+[WARNING] stderr: 

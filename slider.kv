@@ -1,0 +1,19 @@
+<MyLayout>
+    label_txt:text_label
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        #padding:20
+        #spacing:20
+        Label:
+            id:text_label
+            text:"hello World!"
+            font_size:31
+        Slider:
+            min:1 
+            max:50
+            step: 1 
+            orientation:"horizontal"
+            on_value:root.slider_it(*args)
+            
+

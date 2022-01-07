@@ -1,0 +1,19 @@
+
+<MyLayout>
+    inpt:inp
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        padding:20
+        spacing:20
+        Label:
+            id:txt
+            text:"hello World!"
+            font_size:31
+        TextInput:
+            multiline:False 
+            id:inp 
+            on_text:root.inp()
+            #on_text:root.inp()
+            
+

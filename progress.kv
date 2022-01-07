@@ -1,0 +1,19 @@
+
+<MyLayout>
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width,root.height
+        Label:
+            text:"No value here"
+            font_size:32
+            id:txt
+        ProgressBar:
+            id:bar 
+            size_hint_x:.8
+            pos_hint:{"x":.1}
+            min:0
+            max:1
+        Button:
+            text:"click Me"
+            on_press:root.press()
+
